@@ -1,0 +1,60 @@
+- changeSet:
+    id: 2 create table appAccount
+    author: Viorel Cojocaru
+    changes:
+    - createTable:
+        tableName: app_Account
+        columns:
+        - column:
+            name: id
+            type: Long
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              nullable: false
+        - column:
+            name: person_Id
+            type: Long
+            constraints:
+              nullable: false
+              foreignKeyName: person_Id
+              references: person.id
+        - column:
+            name: type_Id
+            type: int
+            constraints:
+              nullable: false
+        - column:
+            name: name
+            type: char(2)
+            constraints:
+              nullable: false
+- changeSet:
+    id: 3 create table Contact
+    author: Viorel Cojocaru
+    changes:
+    - createTable:
+        tableName: contact
+        columns:
+        - column:
+            name: id
+            type: Long
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              nullable: false
+        - column:
+            name: person_Id
+            type: Long
+            constraints:
+              nullable: false
+        - column:
+            name: type_Id
+            type: int
+            constraints:
+              nullable: false
+        - column:
+            name: name
+            type: char(2)
+            constraints:
+              nullable: false

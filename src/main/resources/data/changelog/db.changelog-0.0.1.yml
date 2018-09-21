@@ -1,0 +1,42 @@
+databaseChangeLog:
+- preConditions:
+  - runningAs:
+      username: root
+
+- changeSet:
+  id: 1 create table person
+  author: Viorel Cojocaru
+  changes:
+  - createTable:
+      tableName: person
+      columns:
+      - column:
+          name: id
+          type: int
+          autoIncrement: true
+          constraints:
+            primaryKey: true
+            nullable: false
+      - column:
+          name: first_name
+          type: varchar(50)
+          constraints:
+            nullable: false
+      - column:
+          name: last_name
+          type: varchar(50)
+      - column:
+          name: last_name_on_birth
+          type: varchar(50)
+      - column:
+          name: birth_date
+          type: date
+      - column:
+          name: in_alive
+          type: boolean
+      - column:
+          name: death_date
+          type: date
+      - column:
+          name: photo_Path
+          type: varchar(50)
