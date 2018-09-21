@@ -9,7 +9,7 @@
 
     <changeSet id="1 create table" author="viorel">
         <createTable tableName="person">
-            <column name="id" type="int">
+            <column name="id" type="int" autoIncrement="1">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="first_name" type="varchar(50)">
@@ -25,6 +25,16 @@
             <column name="gender" type="int"/>
         </createTable>
     </changeSet>
-
+    <changeSet id="2 insert" author="viorel">
+        <insert tableName="person">
+            <column name="first_name" value="viorel"/>
+            <column name="last_name" value="cojocaru"/>
+            <column name="last_name_on_birth" value="cojocaru"/>
+            <column name="in_alive" value="1"/>
+            <column name="birth_date" value="19840123"/>
+            <column name="photo_path" value="src//lfgkdlf"/>
+            <column name="gender" value="10"/>
+        </insert>
+    </changeSet>
 
 </databaseChangeLog>
