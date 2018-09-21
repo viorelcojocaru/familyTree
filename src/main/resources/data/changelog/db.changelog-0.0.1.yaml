@@ -16,7 +16,6 @@ databaseChangeLog:
           autoIncrement: true
           constraints:
             primaryKey: true
-            nullable: false
       - column:
           name: first_name
           type: varchar(50)
@@ -40,3 +39,17 @@ databaseChangeLog:
       - column:
           name: photo_Path
           type: varchar(50)
+- changeSet:
+    id: 2 insert to the table person entry
+    author: viorel
+    changes:
+    - insert:
+        tableName: person
+        columns:
+        - column:
+            name: first_name
+            value: Viorel
+        - column:
+            name: last_name
+            value: Cojocaru
+

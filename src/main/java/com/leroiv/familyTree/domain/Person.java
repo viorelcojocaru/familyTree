@@ -38,7 +38,7 @@ public class Person {
     private boolean inALive = true;
     @Column(name = "death_date")
     private Date deathDate;
-    @Column(name = "photoPath")
+    @Column(name = "photo_Path")
     private String photoPath;
 
     public Person(String firstName, String lastName, int gender, String birthDate) throws ParseException {
