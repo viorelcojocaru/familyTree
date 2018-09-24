@@ -1,0 +1,21 @@
+databaseChangeLog:
+- changeSet:
+    id: 2
+    author: familytree
+    comment: insert to the table person entry first time
+    changes:
+    - insert:
+        tableName: person
+        columns:
+        - column:
+            name: gender
+            value: 10
+        - column:
+            name: first_name
+            value: Bobs
+        - column:
+            name: last_name
+            value: Burguers
+        - column:
+            name: birth_date
+            value: "1984-01-23"

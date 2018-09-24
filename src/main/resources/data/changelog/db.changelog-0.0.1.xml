@@ -7,9 +7,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet id="1 create table" author="viorel">
+    <changeSet id="1 create table" author="familytree">
         <createTable tableName="person">
-            <column name="id" type="int" autoIncrement="1">
+            <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="first_name" type="varchar(50)">
@@ -18,7 +18,7 @@
             <column name="last_name" type="varchar(50)">
             </column>
             <column name="last_name_on_birth" type="varchar(50)"/>
-            <column name="in_alive" type="boolean" defaultValueBoolean="true"/>
+            <column name="in_alive" type="boolean" defaultValueBoolean="1"/>
             <column name="birth_date" type="date"/>
             <column name="death_date" type="date"/>
             <column name="photo_path" type="varchar(255)"/>
@@ -32,7 +32,7 @@
             <column name="last_name_on_birth" value="cojocaru"/>
             <column name="in_alive" value="1"/>
             <column name="birth_date" value="19840123"/>
-            <column name="photo_path" value="src//lfgkdlf"/>
+            <column name="photo_path" value="src\\lfgkdlf"/>
             <column name="gender" value="10"/>
         </insert>
     </changeSet>

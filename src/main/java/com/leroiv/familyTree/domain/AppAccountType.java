@@ -5,7 +5,7 @@ import javax.persistence.*;
 /*@Entity(name = "familyTree")
 @Table(name = "appAccountType")*/
 public enum AppAccountType {
-   /* MARRIED(10, "MARRIED"),
+ /*MARRIED(10, "MARRIED"),
     ENGAGED(11, "ENGAGED"),
     RELATIONSHIP(12, "RELATIONSHIP"),
     SEPARATED(13, "SEPARATED"),

@@ -8,11 +8,12 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-/*@Data
+@Data
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor
 @Entity(name="familyTree")
-@Table(name="country")*/
+@Table
 public class Country {//extends Base
+    private int id;
     private String name;
 }

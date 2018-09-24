@@ -1,0 +1,21 @@
+databaseChangeLog:
+- changeSet:
+    id: 3
+    author: familytree
+    comment: insert to the table person entry second
+    changes:
+    - insert:
+        tableName: person
+        columns:
+        - column:
+            name: first_name
+            value: Viorel second
+        - column:
+            name: last_name
+            value: Cojocaru second
+        - column:
+            name: in_alive
+            valueBoolean: true
+        - column:
+            name: birth_date
+            value: "2018-01-24"

@@ -84,7 +84,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--<plugin>
+            <plugin>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-plugin</artifactId>
                 <configuration>
@@ -92,7 +92,7 @@
                     <changeLogFile>src/main/resources/data/bd/bd.changelog-master.xml</changeLogFile>
                 </configuration>
 
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 

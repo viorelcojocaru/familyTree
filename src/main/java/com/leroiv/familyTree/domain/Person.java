@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 @ToString
 @NoArgsConstructor
-@Entity(name = "familyTree")
+@Entity//(name = "familyTree")
 @Table(name = "person")
 public class Person {
     @Transient
