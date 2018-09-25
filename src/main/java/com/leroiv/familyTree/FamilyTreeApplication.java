@@ -23,7 +23,7 @@ public class FamilyTreeApplication {
     @Bean
     CommandLineRunner start(PersonService service) {
         return args -> {
-
+            System.out.println("hello");
             log.info("@@ findAll() call...");
             service.findAll().forEach(entry -> log.info(entry.toString()));
         };
